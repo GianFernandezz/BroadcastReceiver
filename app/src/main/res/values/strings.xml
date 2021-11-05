@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Broadcast Receiver</string>
+    <string name="disconnected">Cargador desconectado</string>
+    <string name="connected">Cargador conectado</string>
+</resources>
