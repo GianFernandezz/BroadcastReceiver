@@ -9,6 +9,7 @@ import android.content.IntentFilter;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private TextView tvBroadCast;
@@ -43,10 +44,12 @@ public class MainActivity extends AppCompatActivity {
         if(isCharging){
             tvBroadCast.setText("Conectado");
             tvBroadCast.setTextColor(Color.parseColor("#0000FF"));
+            Toast.makeText(this, "Cargador Conectado", Toast.LENGTH_SHORT).show();
         }
         else{
             tvBroadCast.setText("Desconectado");
             tvBroadCast.setTextColor(Color.parseColor("#FF0000"));
+            Toast.makeText(this, "Cargador Desconectado", Toast.LENGTH_SHORT).show();
         }
     }
 
